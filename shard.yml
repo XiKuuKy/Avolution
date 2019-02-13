@@ -1,0 +1,14 @@
+name: Avolution
+version: 0.1.0
+
+dependencies:
+  emoji:
+    github: veelenga/emoji.cr
+    branch: master
+
+authors:
+  - xikuuky <simon@phillipharms.com>
+
+crystal: 0.27.0
+
+license: MIT
