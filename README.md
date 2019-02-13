@@ -20,6 +20,7 @@ require "Avolution"
 # check spec for more examples
 Avolution.bputs("Hello, world!")
 Avolution.eputs(":heart:")
+```
 
 ## Contributing
 
