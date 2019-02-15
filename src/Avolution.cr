@@ -41,4 +41,40 @@ module Avolution
   def bputs(s : String)
     puts s.colorize.mode(:bold)
   end
+
+  def uputs(s : String)
+    puts s.colorize.mode(:underline)
+  end
+
+  def iputs(s : String)
+    puts s.colorize.mode(:blink)
+  end
+
+  def aputs(s : String)
+    puts s.colorize.mode(:blink).mode(:underline).mode(:bold)
+  end
+
+  def string?(something)
+    typeof(something) == String
+  end
+
+  def number?(something)
+    something.is_a?(Number)
+  end
+
+  def symbol?(something)
+    typeof(something) == Symbol
+  end
+
+  def xor?(a, b)
+    if a & b
+      return false
+    else
+      if a | b
+        return true
+      else
+        return false
+      end
+    end
+  end
 end
