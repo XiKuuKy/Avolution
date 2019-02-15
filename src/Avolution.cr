@@ -38,34 +38,42 @@ module Avolution
     {{function}}
   end
 
+  # puts bold text
   def bputs(s : String)
     puts s.colorize.mode(:bold)
   end
 
+  # puts underlined text
   def uputs(s : String)
     puts s.colorize.mode(:underline)
   end
 
+  # puts blinking/interupting text
   def iputs(s : String)
     puts s.colorize.mode(:blink)
   end
 
+  # puts text that will get your attention
   def aputs(s : String)
     puts s.colorize.mode(:blink).mode(:underline).mode(:bold)
   end
 
+  # are you a string?
   def string?(something)
     typeof(something) == String
   end
 
+  # zebra is a number but this will allow you to check other horse like animals
   def number?(something)
     something.is_a?(Number)
   end
 
+  # checks if something is a `:symbol`
   def symbol?(something)
     typeof(something) == Symbol
   end
 
+  # logical xor (thank God its logical)
   def xor?(a, b)
     if a & b
       return false
